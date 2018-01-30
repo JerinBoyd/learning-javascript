@@ -60,3 +60,8 @@ console.log ('what is the color of the object', typeof anObject.color);
 console.log('what is the size of the object?' , anObject.size);
 console.log('what is the toppings on anObject?', anObject['toppings']);
 
+// objects are everywhere and we shall return
+//Booleans
+const yes = true;
+const no = false;
+
