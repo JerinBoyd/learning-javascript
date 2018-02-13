@@ -23,14 +23,20 @@ const circle = {
 
     
 };
+// the following funtion is to test the 'this' keyword
+function printThis(){
+    console.log(this);
+}
+printThis = printThis.bind(circle);
+printThis();
 
-console.log(circle);
-circle.changeColor('chartrueuse');
-console.log(circle);
-circle.shrink();
-console.log(circle);
-circle.grow();
-console.log(circle);
-circle.move(10, 10);
-console.log(circle);
-console.log(this);
+// console.log(circle);
+// circle.changeColor('chartrueuse');
+// console.log(circle);
+// circle.shrink();
+// console.log(circle);
+// circle.grow();
+// console.log(circle);
+// circle.move(10, 10);
+// console.log(circle);
+// console.log(this);
