@@ -18,6 +18,8 @@ const vLiteral = {
     color: 'red',
     stank: 'new car'
 };
+
+
 console.log(vLiteral);
 
 class truck extends Vehicle {
@@ -32,6 +34,24 @@ class truck extends Vehicle {
         console.log('bbbbbaaarrrahhhhhhh!!!');
     }
 }
+
+
+class Car extends Vehicle{
+    constructor(color='red', stank='new car', mileage='1000'){
+        super(color, stank);
+        this.mileage = mileage; 
+    }
+    driveFast(){
+        console.log('going fast');
+    }
+    
+
+
+}
+const aCar = new Car (); 
+aCar.drive();
+aCar.driveFast();
+console.log(aCar);
 
 const t = new truck();
 t.drive();
